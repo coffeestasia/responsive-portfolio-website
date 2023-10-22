@@ -15,6 +15,7 @@
 
     <body>
         <!-------------- HEADER -------------->
+
         <header class="header">
             <a href="#home" class="logo">Portfolio</a>
 
@@ -22,17 +23,16 @@
 
             <nav class="navbar">
                 <a href="#about" class="active">Обо мне</a>
-        <!-- <a href="#services" class="active">Навыки</a>-->
-                <a href="#services" class="active">Мои услуги</a>
+                <a href="#services" class="active">Навыки</a>
                 <a href="#portfolio" class="active">Портфолио</a>
                 <a href="#contact" class="active">Контакты</a>
             </nav>
         </header>
 
-        <!-------------- HOME -------------->    
+        <!-------------- HOME -------------->
+
         <section class="home" id="home">
             <div class="home-content">
-            <!--<h3>Hello, It's Me</h3>-->
                 <h1>Anastasia Safronova</h1>
                 <h3>Я <span class="multiple-text"></span></h3>
                 <p>В 16 мне сказали, что девушки не приветствуются в программировании. А теперь я занимаюсь профессией мечты 🦸‍</p>
@@ -60,41 +60,46 @@
             <div class="about-content">
                 <h2 class="heading">Обо <span>мне</span></h2>
                 <h3>Front-end & Back-end Developer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                    et magnis dis parturient montes, nascetur ridiculus mus.
-                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                    Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
-                <a href="#" class="btn">Узнать больше</a>
+                <p>Я завершила почти годовой курс Java-разработчик от Яндекс Практикум, на котором получила опыт,
+                    в том числе командной разработки и подготовилась к работе на позиции Junior Java Developer.</p>
+
+                <p>По итогам обучения обладаю навыками Java, Spring (Boot, MVC, Security, Data), SQL, Hibernate, REST API,
+                    Docker, Mockito, JUnit, Maven, Git, а также Thymeleaf, HTML, CSS.</p>
+
+                <p>Под руководством ментора развиваюсь в направлении Full-Stack разработки.</p>
             </div>
         </section>
 
         <!-------------- SERVICES -------------->
 
         <section class="services" id="services">
-            <h2 class="heading">Мои <span>услуги</span></h2>
+            <h2 class="heading">Мои <span>навыки</span></h2>
 
             <div class="services-container">
                 <div class="services-box">
                     <i class='bx bxl-java'></i>
                     <h3>Backend Разработка</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                        et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                        Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
-                    <a href="#" class="btn">Узнать больше</a>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring (Boot, MVC, Security, Data)</li>
+                        <li>SQL (PostgreSQL)</li>
+                        <li>Hibernate</li>
+                        <li>REST API</li>
+                        <li>JUnit, Mockito</li>
+                        <li>Thymeleaf</li>
+                        <li>Maven</li>
+                        <li>Git</li>
+                    </ul>
                 </div>
 
                 <div class="services-box">
                     <i class="bx bx-code-alt"></i>
                     <h3>Frontend Разработка</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                        et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                        Nulla consequat massa quis enim. Donec pede justo, fringilla</p>
-                    <a href="#" class="btn">Узнать больше</a>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -102,66 +107,42 @@
         <!-------------- PORTFOLIO -------------->
 
         <section class="portfolio" id="portfolio">
-            <h2 class="heading">Последние <span>Проекты</span></h2>
+            <h2 class="heading">Последние <span>проекты</span></h2>
 
             <div class="portfolio-container">
                 <div class="portfolio-box">
                     <img src="images/explore-with-me.png" alt="">
                     <div class="portfolio-layer">
                         <h4>Explore with me</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
+                        <p>Микросервисное приложение-афиша мероприятий</p>
+                        <a href="https://github.com/coffeestasia/java-explore-with-me"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
 
                 <div class="portfolio-box">
-                    <img src="images/explore-with-me.png" alt="">
+                    <img src="images/bubble-sort.png" alt="">
                     <div class="portfolio-layer">
-                        <h4>Explore with me</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
+                        <h4>Bubble Sort</h4>
+                        <p>Веб-приложение для сортировки массива пузырьковым методом</p>
+                        <a href="https://github.com/coffeestasia/fullstack-bubble-sort"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
 
                 <div class="portfolio-box">
-                    <img src="images/explore-with-me.png" alt="">
+                    <img src="images/share-it.png" alt="">
                     <div class="portfolio-layer">
-                        <h4>Explore with me</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
+                        <h4>Share It</h4>
+                        <p>Микросервисное приложение для аренды вещей</p>
+                        <a href="https://github.com/coffeestasia/java-shareit"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
 
                 <div class="portfolio-box">
-                    <img src="images/explore-with-me.png" alt="">
+                    <img src="images/portfoilio-website.png" alt="">
                     <div class="portfolio-layer">
-                        <h4>Explore with me</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="images/explore-with-me.png" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Explore with me</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio-box">
-                    <img src="images/explore-with-me.png" alt="">
-                    <div class="portfolio-layer">
-                        <h4>Explore with me</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                            Aenean commodo ligula eget dolor</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
+                        <h4>Сайт-визитка</h4>
+                        <p>Адаптивный сайт-портфолио</p>
+                        <a href="https://github.com/coffeestasia/responsive-portfolio-website"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
             </div>
@@ -170,7 +151,7 @@
         <!-------------- CONTACT -------------->
 
         <section class="contact" id="contact">
-            <h2 class="heading">Связаться <span>Со Мной</span></h2>
+            <h2 class="heading">Связаться <span>со мной</span></h2>
 
             <form action="#">
                 <div class="input-box">
