@@ -10,11 +10,7 @@ menuIcon.onclick = () => {
 
 /*==================== scroll sections active link ====================*/
 
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a')
-
 window.onscroll = () => {
-
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 }
@@ -42,3 +38,20 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true
 })
+
+/*==================== email validation ====================*/
+
+let emailInput = document.getElementById('email');
+
+emailInput.addEventListener('input', validateEmail);
+
+const EMAIL_REGEXP = /^[a-zA-Z0–9+_.-]+@[a-zA-Z0–9.-]+$/;
+
+function validateEmail() {
+    if (!EMAIL_REGEXP.test(this.value)) {
+        this.setCustomValidity('Проверьте правильность введённого email');
+    } else {
+        this.setCustomValidity('');
+    }
+    this.reportValidity();
+}
