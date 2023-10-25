@@ -41,11 +41,11 @@ const typed = new Typed('.multiple-text', {
 
 /*==================== email validation ====================*/
 
+const EMAIL_REGEXP = /^[a-zA-Z0–9+_.-]+@[a-zA-Z0–9.-]+$/;
+
 let emailInput = document.getElementById('email');
 
 emailInput.addEventListener('input', validateEmail);
-
-const EMAIL_REGEXP = /^[a-zA-Z0–9+_.-]+@[a-zA-Z0–9.-]+$/;
 
 function validateEmail() {
     if (!EMAIL_REGEXP.test(this.value)) {
@@ -55,3 +55,21 @@ function validateEmail() {
     }
     this.reportValidity();
 }
+
+/*==================== phone number validation ====================*/
+
+const PHONE_REGEXP = /^[\d\+][\d\(\)\ -]{10,14}\d$/;
+
+let phoneInput = document.getElementById('phone');
+
+phoneInput.addEventListener('input', validatePhone);
+
+function validatePhone() {
+    if (!PHONE_REGEXP.test(this.value)) {
+        this.setCustomValidity('Проверьте правильность введённого номера телефона');
+    } else {
+        this.setCustomValidity('');
+    }
+    this.reportValidity();
+}
+
