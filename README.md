@@ -1,4 +1,4 @@
-# responsive-portfolio-website - адаптивный одностраничный сайт-портфолио
+# Responsive Portfolio Website - адаптивный одностраничный сайт-портфолио
 HTML, CSS, JavaScript
 
 ## О проекте
